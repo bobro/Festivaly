@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_marginTop="15dip"
+                android:padding="5dip"
+                android:text="@string/PosliNazov"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/PosliEditNazov"
+                android:layout_marginTop="15dip"
+                android:hint="@string/bazantpohoda"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="5dip"
+                android:text="@string/PosliDatumOd"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/PosliEditDatumOd"
+                android:hint="@string/datum1"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="5dip"
+                android:text="@string/PosliDatumDo"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/PosliEditDatumDo"
+                android:hint="@string/datum2"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="5dip"
+                android:text="@string/PosliAdresa"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/PosliEditAdresa"
+                android:hint="@string/letiskoTrencin"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="5dip"
+                android:text="@string/PosliEmail"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/PosliEditEmail"
+                android:hint="@string/mrkvickaemail"
+                android:inputType="text|textEmailAddress" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="5dip"
+                android:text="@string/PosliWeb"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/PosliEditWeb"
+                android:hint="@string/bazantpohodaweb"
+                android:inputType="textWebEditText" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="5dip"
+                android:text="@string/PosliPopis"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/PosliEditPopis"
+                android:gravity="top"
+                android:inputType="text|textMultiLine|textAutoCorrect"
+                android:minLines="5" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/PridajPodujatie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:text="@string/Odosli" />
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/vertikal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/aktualizovanieNadpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:paddingLeft="30dip"
+        android:text="@string/AktualizovanieNadpis"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/NaposledyAktualizovanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aktualizovanieNadpis"
+        android:padding="5dip"
+        android:paddingLeft="20dip"
+        android:text="@string/AktualizaciaPosledna"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/NaposledyAktualizovanieVypis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aktualizovanieNadpis"
+        android:layout_toRightOf="@+id/NaposledyAktualizovanie"
+        android:padding="5dip"
+        android:paddingRight="1dip" />
+
+    <TextView
+        android:id="@+id/pocetPodujati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NaposledyAktualizovanieVypis"
+        android:padding="5dip"
+        android:paddingLeft="20dip"
+        android:text="@string/AktualizaciaPocPodujati"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pocetPodujatiVypis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NaposledyAktualizovanieVypis"
+        android:layout_toRightOf="@+id/pocetPodujati"
+        android:padding="5dip"
+        android:paddingRight="1dip" />
+
+    <TextView
+        android:id="@+id/pocetSkupin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pocetPodujati"
+        android:padding="5dip"
+        android:paddingLeft="20dip"
+        android:text="@string/AktualizaciaPocSkup"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pocetSkupinVypis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pocetPodujati"
+        android:layout_toRightOf="@+id/pocetPodujati"
+        android:padding="5dip"
+        android:paddingRight="1dip" />
+
+    <TextView
+        android:id="@+id/pocetRecenzii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pocetSkupin"
+        android:padding="5dip"
+        android:paddingLeft="20dip"
+        android:text="@string/AktualizaciaPocRec"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pocetRecenziiVypis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pocetSkupin"
+        android:layout_toRightOf="@+id/pocetPodujati"
+        android:padding="5dip" />
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:id="@+id/RecenziaNazov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:text="@string/RecenziaNazov"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RecenziaNazovVypis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/RecenziaNazov"
+            android:padding="20dip" />
+
+        <TextView
+            android:id="@+id/RecenziaPrezyvka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/RecenziaNadpisText"
+            android:layout_below="@+id/RecenziaNazov"
+            android:padding="10dip"
+            android:text="@string/RecenziaNick"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/RecenziaPrezyvkaText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/RecenziaNazov"
+            android:layout_toRightOf="@+id/RecenziaPrezyvka"
+            android:hint="Juro567"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/RecenziaNadpis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/RecenziaNadpisEdit"
+            android:layout_below="@+id/RecenziaPrezyvkaText"
+            android:padding="10dip"
+            android:text="@string/RecenziaNadpis"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/RecenziaNadpisEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@+id/RecenziaPopisText"
+            android:layout_below="@+id/RecenziaPrezyvkaText"
+            android:hint="Vyborné"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/RecenziaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RecenziaNadpis"
+            android:padding="10dip"
+            android:text="@string/recenzia"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/RecenziaPopisText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/RecenziaNadpisEdit"
+            android:layout_toRightOf="@+id/RecenziaText"
+            android:gravity="top"
+            android:inputType="text|textMultiLine|textAutoCorrect"
+            android:minLines="5" />
+
+        <RatingBar
+            android:id="@+id/RecenziaRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RecenziaPopisText"
+            android:layout_centerHorizontal="true"
+            android:numStars="5"
+            android:padding="0dip"
+            android:rating="4"
+            android:stepSize="1" />
+
+        <Button
+            android:id="@+id/RecenziaOdoslat"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/RecenziaRating"
+            android:padding="20dip"
+            android:text="@string/odosli" />
+    </RelativeLayout>
+
+</ScrollView>

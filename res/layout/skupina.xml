@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabSkupiny"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/infoSkupiny"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/NazovSkupinyVypis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dip"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/zanerSKupiny"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/NazovSkupinyVypis"
+                        android:padding="10dip"
+                        android:text="@string/SkupinaZaner"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/zanerSkupinyVypis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/NazovSkupinyVypis"
+                        android:layout_toRightOf="@+id/zanerSKupiny"
+                        android:padding="10dip" />
+
+                    <TextView
+                        android:id="@+id/clenoviaSkupiny"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/zanerSKupiny"
+                        android:padding="10dip"
+                        android:text="@string/SkupinaClenovia"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/clenoviaSkupinyVypis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/zanerSKupiny"
+                        android:layout_toRightOf="@+id/rokZalozenia"
+                        android:padding="10dip" />
+
+                    <TextView
+                        android:id="@+id/rokZalozenia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/clenoviaSkupinyVypis"
+                        android:padding="10dip"
+                        android:text="@string/SkupinaRokZalozenia"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rokZalozeniaVypis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/clenoviaSkupinyVypis"
+                        android:layout_toRightOf="@+id/rokZalozenia"
+                        android:padding="10dip" />
+
+                    <TextView
+                        android:id="@+id/krajinaPovodu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/rokZalozenia"
+                        android:padding="10dip"
+                        android:text="@string/SkupinaKrajinaPovodu"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/krajinaPovoduVypis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rokZalozenia"
+                        android:layout_toRightOf="@+id/krajinaPovodu"
+                        android:padding="10dip" />
+
+                    <TextView
+                        android:id="@+id/PopisFestivalu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/krajinaPovodu"
+                        android:padding="10dip"
+                        android:text="@string/SkupinaPopis"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/PopisSkupinyVypis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/PopisFestivalu"
+                        android:padding="20dip" />
+                </RelativeLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/albumySkupiny"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Program"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dip"
+                        android:paddingLeft="30dip"
+                        android:paddingTop="30dip"
+                        android:text="@string/SkupinaAlbumy"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/SkupinaAlbumyVypis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dip" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/PodujatiaSkupiny"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/vertikal"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:divider="#00000000"
+                    android:dividerHeight="5dp"
+                    android:drawSelectorOnTop="false" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

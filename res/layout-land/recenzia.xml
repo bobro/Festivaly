@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/obrazokRecenzia"
+            android:layout_width="130dip"
+            android:layout_height="130dip"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/RecenziaNazovPodujatiaVypis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RecenziaAutorRecenzie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/RecenziaNazovPodujatiaVypis"
+            android:padding="10dip"
+            android:text="@string/RecenziaAutor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RecenziaAutorRecenzieVypis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RecenziaNazovPodujatiaVypis"
+            android:layout_toRightOf="@+id/RecenziaAutorRecenzie"
+            android:padding="10dip" />
+
+        <TextView
+            android:id="@+id/RecenziaHodnotenie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/RecenziaAutorRecenzieVypis"
+            android:padding="10dip"
+            android:text="@string/RecenziaHodnotenie"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/RecenziaRatingVypis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RecenziaHodnotenie"
+            android:layout_centerHorizontal="true"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:padding="0dip"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/RecenziahlavickaVypis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/RecenziaRatingVypis"
+            android:padding="10dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RecenziaPopisVypis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RecenziahlavickaVypis"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip" />
+    </RelativeLayout>
+
+</ScrollView>

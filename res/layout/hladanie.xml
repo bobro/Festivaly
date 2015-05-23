@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/vertikal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/HladanieNazovFestivalu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dip"
+                    android:text="@string/HladanieNazovFestivalu"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editPodujatia"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="2"
+                    android:hint="TopFest" />
+
+                <TextView
+                    android:id="@+id/HladanieRokFestivalu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dip"
+                    android:text="@string/HladanieRokFestivalu"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/HladanieZadanieRokuFestivalu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="2014"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/HladajFestival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hladaj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/HladaniaNazovSkupiny"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dip"
+                    android:text="@string/HladanieNazovSkupiny"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editSkupina"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="2"
+                    android:hint="Hex" />
+
+                <TextView
+                    android:id="@+id/HladanieZanruSkupiny"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dip"
+                    android:text="@string/HladanieZanruSkupiny"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/HladanieZadanieZanruSkupiny"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Rock"
+                    android:inputType="text" />
+
+                <Button
+                    android:id="@+id/HladajSkupinu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hladaj" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

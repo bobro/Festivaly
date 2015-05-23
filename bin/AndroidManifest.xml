@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.festivaly"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<supports-screens android:largeScreens="true" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity android:name="com.example.festivaly.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.festivaly.PridaniePodujatia"
+            android:label="Pridanie Podujatia" >
+        </activity>
+        <activity
+            android:name="com.example.festivaly.VyberAktualizovania"
+            android:label="Aktualizacia" >
+        </activity>
+        <activity
+            android:name="com.example.festivaly.VyberHladania"
+            android:label="Hladanie" >
+        </activity>
+        <activity
+            android:name="com.example.festivaly.VyberPodujatia"
+            android:label="Podujatia" >
+        </activity>
+        <activity
+            android:name="com.example.festivaly.VyberSkupiny"
+            android:label="Skupiny" >
+        </activity>
+        <activity
+            android:name="com.example.festivaly.Podujatie"
+            android:label="Podujatie" >
+        </activity>
+        <activity
+            android:name="com.example.festivaly.Skupina"
+            android:label="Skupina" >
+        </activity>
+        <activity
+            android:name="com.example.festivaly.PridanieRecenzie"
+            android:label="Pridanie recenzie" >
+        </activity>
+        <activity
+            android:name="com.example.festivaly.Recenzia"
+            android:label="Recenzia" >
+        </activity>
+        <activity
+            android:name="com.example.festivaly.Hladanie"
+            android:label="Hladanie" >
+        </activity>
+
+        <service
+            android:name="com.example.festivaly.MyAlarmService"
+            android:enabled="true" />
+
+        <receiver android:name="com.example.festivaly.MyReceiver" />
+    </application>
+
+    
+
+</manifest>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_shape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/NazovSkupiny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="10dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/KrajinaPovodu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/NazovSkupiny"
+        android:padding="10dip"
+        android:paddingLeft="20dip" />
+
+    <TextView
+        android:id="@+id/spodny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/NazovSkupiny"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dip"
+        android:text="@string/VypisSkupinZaner"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/zanerSkupinydole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NazovSkupiny"
+        android:layout_toRightOf="@+id/spodny"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dip"
+        android:textSize="12sp" />
+
+</RelativeLayout>

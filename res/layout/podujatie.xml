@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabPoduajtie"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/obrazok"
+                        android:layout_width="170dip"
+                        android:layout_height="170dip"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/NazovFestivaluVypis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="30dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/DatumOdFestivalu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/NazovFestivaluVypis"
+                        android:padding="10dip"
+                        android:paddingLeft="20dip"
+                        android:text="@string/PodujatieOd"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/DatumOdFestivaluVypis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/NazovFestivaluVypis"
+                        android:layout_toRightOf="@+id/DatumOdFestivalu"
+                        android:padding="10dip" />
+
+                    <TextView
+                        android:id="@+id/DatumDoFestivalu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/DatumOdFestivaluVypis"
+                        android:padding="10dip"
+                        android:paddingLeft="20dip"
+                        android:text="@string/PodujatieDo"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/DatumDoFestivaluVypis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/DatumOdFestivaluVypis"
+                        android:layout_toRightOf="@+id/DatumDoFestivalu"
+                        android:padding="10dip" />
+
+                    <TextView
+                        android:id="@+id/miestoKonania"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/DatumDoFestivalu"
+                        android:padding="10dip"
+                        android:paddingLeft="20dip"
+                        android:text="@string/PodujatieMiestoKonania"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/miestoKonaniaVypis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/DatumDoFestivalu"
+                        android:layout_toRightOf="@+id/miestoKonania"
+                        android:padding="10dip" />
+
+                    <TextView
+                        android:id="@+id/PopisFestivalu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/miestoKonania"
+                        android:padding="10dip"
+                        android:paddingLeft="20dip"
+                        android:text="@string/PodujatiePopis"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/PopisfestivaluVypis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/PopisFestivalu"
+                        android:paddingLeft="30dip" />
+
+                    <TextView
+                        android:id="@+id/Web"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/PopisfestivaluVypis"
+                        android:padding="15dip"
+                        android:text="@string/PodujatieWeb"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/webVypis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/PopisfestivaluVypis"
+                        android:layout_toRightOf="@+id/Web"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        android:id="@+id/Hodnotenie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/Web"
+                        android:padding="10dip"
+                        android:paddingLeft="20dip"
+                        android:text="@string/PodujatieHodnotenie"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hodnotenieVypis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Web"
+                        android:layout_toRightOf="@+id/Hodnotenie"
+                        android:padding="10dip" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@id/hodnotenieVypis"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/mapaUbytovanie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Moznosti\nUbytovania" />
+
+                        <Button
+                            android:id="@+id/mapaZaujimavosti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Zaujimavosti\nOkolia" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/program"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Program"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dip"
+                        android:paddingLeft="30dip"
+                        android:paddingTop="30dip"
+                        android:text="@string/PodujatieProgram"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ProgramVypis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/recenzie"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/vertikal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/PriddajRecenziu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:text="@string/PridajRecenziu" />
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:divider="#00000000"
+                    android:dividerHeight="5dp"
+                    android:drawSelectorOnTop="false" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

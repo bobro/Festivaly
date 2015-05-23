@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_shape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/HlavickaNazov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip"
+        android:text="Názov:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/HlavickaRecenzie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/HlavickaNazov"
+        android:paddingBottom="10dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="10dip" />
+
+    <TextView
+        android:id="@+id/pocetHviezdNazov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/HlavickaRecenzie"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip"
+        android:text="Hodnotenie:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pocetHviezd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pocetHviezdNazov"
+        android:paddingBottom="10dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="10dip" />
+
+    <TextView
+        android:id="@+id/spodny1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pocetHviezd"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dip"
+        android:text="@string/VypisRecenziiAutor"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/autorRecenzie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pocetHviezd"
+        android:layout_toRightOf="@+id/spodny1"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dip"
+        android:textSize="12sp" />
+
+</RelativeLayout>

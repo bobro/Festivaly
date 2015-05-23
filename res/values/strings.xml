@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Podujatia</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="red">#FF0000</color>
+    <color name="blue">#3299CC</color>
+    <!-- main menu - activity_main -->
+
+    <string name="podujatia">Podujatia</string>
+    <string name="skupiny">Skupiny</string>
+    <string name="hladaj">Hľadaj</string>
+    <string name="aktualizuj">Aktualizuj</string>
+    <string name="pridaniePodujatia">Pridaj podujatie</string>
+
+    <!-- pridaj recenziu -->
+
+    <string name="odosli">Odošli recenziu</string>
+    <string name="RecenziaNazov">Podujatie: </string>
+    <string name="RecenziaNadpis">Nadpis: </string>
+    <string name="RecenziaNick">Prezývka: </string>
+    <string name="recenzia">Recenzia: </string>
+
+    <!-- pridaj podujatie -->
+
+    <string name="PosliNazov">Názov: </string>
+    <string name="PosliDatumOd">Datum do: </string>
+    <string name="PosliDatumDo">Datum od: </string>
+    <string name="PosliAdresa">Adresa: </string>
+    <string name="PosliEmail">Email: </string>
+    <string name="PosliWeb">Web: </string>
+    <string name="PosliPopis">Popis: </string>
+    <string name="Odosli">Odošli</string>
+
+    <!-- hladaj podujatie / skupinu -->
+
+    <string name="HladanieNazovFestivalu">Zadaj nazov podujatia</string>
+    <string name="HladanieRokFestivalu">Zadaj rok konania</string>
+    <string name="HladanieNazovSkupiny">Zadaj nazov skupiny</string>
+    <string name="HladanieZanruSkupiny">Zadaj zaner</string>
+    <string name="PridajRecenziu">Pridaj recenziu</string>
+
+    <!-- podujatie -->
+
+    <string name="PodujatieProgram">Program:</string>
+    <string name="PodujatieWeb">Web:</string>
+    <string name="PodujatieHodnotenie">Hodnotenie:</string>
+    <string name="PodujatiePopis">Popis:</string>
+    <string name="PodujatieMiestoKonania">Miesto konania:</string>
+    <string name="PodujatieOd">Od:</string>
+    <string name="PodujatieDo">Do:</string>
+
+    <!-- recenzia -->
+
+    <string name="RecenziaAutor">Autor:</string>
+    <string name="RecenziaHodnotenie">Hodnotenie:</string>
+
+    <!-- recenzia -->
+
+    <string name="SkupinaZaner">Žáner:</string>
+    <string name="SkupinaClenovia">Členovia:</string>
+    <string name="SkupinaRokZalozenia">Rok založenia:</string>
+    <string name="SkupinaKrajinaPovodu">Krajina pôvodu:</string>
+    <string name="SkupinaPopis">Popis:</string>
+    <string name="SkupinaAlbumy">Albumy:</string>
+
+    <!-- vypis_podujati -->
+
+    <string name="VypisPodujatiDo">Do:</string>
+    <string name="VypisPodujatiOd">Od:</string>
+    <string name="VypisPodujatiVstupne">Vstupné:</string>
+
+    <!-- vypis_recenzii -->
+
+    <string name="VypisRecenziiAutor">Autor:</string>
+
+    <!-- vypis_Skupin -->
+
+    <string name="VypisSkupinZaner">Žáner:</string>
+
+    <!-- aktualizacia -->
+
+    <string name="AktualizovanieNadpis">Aktualizácie  pred / po</string>
+    <string name="AktualizaciaPosledna">Posledná aktualizácia: </string>
+    <string name="AktualizaciaPocPodujati">Počet podujatí:</string>
+    <string name="AktualizaciaPocRec">Počet recenzií:</string>
+    <string name="AktualizaciaPocSkup">Počet skupín:</string>
+ 
+    
+    <!-- Hinty -->
+    
+     <string name="bazantpohoda">Bažant Pohoda</string>
+     <string name="datum1">5.5.2025</string>
+     <string name="datum2">25.5.2025</string>
+     <string name="letiskoTrencin">Letisko,Trenčín</string>
+     <string name="mrkvickaemail">Mrkvicka@gmail.com</string>
+     <string name="bazantpohodaweb">www.bazantpohoda.sk</string>
+     
+</resources>
